@@ -1,6 +1,5 @@
-flask
-flask-cors
+Django
+gunicorn
+django-cors-headers
 pandas
 playwright
-gunicorn
-Django
