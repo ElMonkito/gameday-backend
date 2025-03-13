@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^mw_4v7$3wwulv(e^3d!l@o+k+w)@ffwgtnm$0ql0(@jk$=$66
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["gameday-backend.onrender.com"]
+ALLOWED_HOSTS = ["gameday-backend.onrender.com", "localhost", "127.0.0.1",]
 CSRF_TRUSTED_ORIGINS = ["https://gameday-backend.onrender.com"]
 
 PORT = os.environ.get("PORT", 8000)
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'backend.urls'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "https://gameday-frontend.vercel.app",
-    "localhost:3000",
+    "http://localhost:3000",
 ]
 
 
