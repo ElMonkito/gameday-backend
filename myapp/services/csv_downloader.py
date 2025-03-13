@@ -10,7 +10,7 @@ def download_csv():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
 
-        page.goto("https://www.sihf.ch/fr/game-center/other-leagues#/today/time/asc/page/0/")
+        page.goto("https://www.sihf.ch/fr/game-center/heute/#/today/time/asc/page/0/")
 
         page.wait_for_load_state("networkidle")
 
